@@ -13,8 +13,8 @@ The task assigned was to find a replacement for boost with some other module whi
 
 
 Solution:  
-Instead of a module of a particular programming language we could use a specific type of C/C++ compiler. Just like a normal compiler it should be able to annotate the C++ header files but with the additional feature that creates wrapper code in order to make the C/C++ libraries available to the scripting languages. 
-One such compiler which cn perform such operation for various scripting languages including python is [Simplified Wrapper and Interface Generator(SWIG)](http://www.swig.org/). It is a compiler which integrates C/C++ code with languages like Python, Ruby, Java, etc. 
+Instead of a module of a particular programming language we could use a specific type of C/C++ compiler. Just like a normal compiler, it should be able to annotate the C++ header files but with the additional feature that creates wrapper code in order to make the C/C++ libraries available to the scripting languages. 
+One such compiler which can perform such operation for various scripting languages including python is [Simplified Wrapper and Interface Generator(SWIG)](http://www.swig.org/). It is a compiler which integrates C/C++ code with languages like Python, Ruby, Java, etc. 
 
 
 Working of SWIG:  
@@ -24,5 +24,6 @@ Now to convert to wrapper classes of python we have to pass command line argumen
 After execution of the commands two files would be created "sorting.py" and a shared object library "_fib.so".  
 Later as usual, we can use the .py file to implement necessary python modules and functions directly.  
 
+SWIG can be useful in case we would want to implement other languges as well. We would just need to create the particular language's wrapper class through the command line arguments.
 
 Thanks

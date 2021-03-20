@@ -1,0 +1,3 @@
+> swig -python -module sort sort.h
+> gcc -fPIC -c sort*.c
+> gcc -shared fib*.o -o _fib.so

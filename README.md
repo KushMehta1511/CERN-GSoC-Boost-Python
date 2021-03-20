@@ -17,4 +17,12 @@ Instead of a module of a particular programming language we could use a specific
 One such compiler which cn perform such operation for various scripting languages including python is Simplified Wrapper and Interface Generator(SWIG). It is a compiler which integrates C/C++ code with languages like Python, Ruby, Java, etc. 
 
 
-Working of SWIG:
+Working of SWIG:  
+[sorting.h](https://github.com/KushMehta1511/CERN-GSoC-Boost-Python/blob/main/sorting.h) file contains the function definition of counting sort algorithm.  
+[sorting.c](https://github.com/KushMehta1511/CERN-GSoC-Boost-Python/blob/main/sorting.c) file contains the implementation of the counting sort function defined in sorting.h.  
+Now to convert to wrapper classes of python we have to pass command line arguments. These commands are displayed in [generateWrapper](https://github.com/KushMehta1511/CERN-GSoC-Boost-Python/blob/main/generateWrapper) file.  
+After execution of the commands two files would be created "sorting.py" and a shared object library "_fib.so".  
+Later as usual, we can use the .py file to implement necessary python modules and functions directly.  
+
+
+Thanks

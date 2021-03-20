@@ -15,3 +15,6 @@ The task assigned was to find a replacement for boost with some other module whi
 Solution:
 Instead of a module of a particular programming language we could use a specific type of C/C++ compiler. Just like a normal compiler it should be able to annotate the C++ header files but with the additional feature that creates wrapper code in order to make the C/C++ libraries available to the scripting languages. 
 One such compiler which cn perform such operation for various scripting languages including python is Simplified Wrapper and Interface Generator(SWIG). It is a compiler which integrates C/C++ code with languages like Python, Ruby, Java, etc. 
+
+
+Working of SWIG:

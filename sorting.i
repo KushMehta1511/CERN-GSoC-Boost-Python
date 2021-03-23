@@ -7,7 +7,7 @@
 
 //We would also list all the functions which are to be interfaced
 //When we have to include only some functions then just mention the definitions.
-void sort(int *arr, int nums);
+void sort(int *nums, int size);
 //To include all the functions of the header file:
 %include "sort.h"
 

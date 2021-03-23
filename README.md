@@ -22,7 +22,9 @@ Working of SWIG:
 [sorting.c](https://github.com/KushMehta1511/CERN-GSoC-Boost-Python/blob/main/sorting.c) file contains the implementation of the counting sort function defined in sorting.h.  
 Now to convert to wrapper classes of python we have to pass command line arguments. These commands are displayed in [generateWrapper](https://github.com/KushMehta1511/CERN-GSoC-Boost-Python/blob/main/generateWrapper) file.  
 After execution of the commands two files would be created "sorting.py" and a shared object library "_fib.so".  
-Later as usual, we can use the .py file to implement necessary python modules and functions directly.  
+Later as usual, we can use the .py file to implement necessary python modules and functions directly.    
+
+The implementation od SWIG for CMSSW can be done through creating interfaces of individual files which require python implementation to functions. The methodologyis briefed in [cmsswImplementation.md](https://github.com/KushMehta1511/CERN-GSoC-Boost-Python/blob/main/cmsswImplementation.md).
 
 SWIG can be useful in case we would want to implement other languges as well. We would just need to create the particular language's wrapper class through the command line arguments.
 
